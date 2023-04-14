@@ -6,75 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefann93 | Rock Paper Scissors</title>
-    <style>
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 15px;
-            padding-top: 15px;
-        }
-
-        .underHeader {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .score {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            padding: 0px 20px;
-            gap: 5px;
-        }
-
-        .scores {
-            display: flex;
-            margin-top: 30px;
-            justify-content: center;
-        }
-
-        .gameResult {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .button {
-            width: 75px;
-            padding: 2px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #3366CC;
-        }
-        .footer{
-            display: flex;
-            justify-content: center;
-            padding: 30px;
-            position: absolute;
-            bottom:0;
-            left:0;
-            right:0;
-            background-color: rgb(192, 191, 191);
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <h1 class="header">Rock Paper Scissors</h1>
-    <h4 class="underHeader">You VS Computer</h4>
+    <p class="underHeader">You VS Computer</p>
     <div class="buttons">
         <button class="button" id="rock" name="rock">Rock</button>
         <button class="button" id="paper" name="paper">Paper</button>
@@ -92,9 +29,10 @@
     </div>
     <p id="gameResult" class="gameResult"></p>
     <div class="footer">
-        <a href="https://github.com/Stefann93">Stefan Ilic &copy;</a>
+        <a class="github" href="https://github.com/Stefann93">Stefan Ilic &copy;</a>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

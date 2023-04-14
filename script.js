@@ -1,5 +1,5 @@
-let playerScore = 0;
-let computerScore = 0;
+let playerScore = parseInt(document.getElementById("player").textContent);;
+let computerScore = parseInt(document.getElementById("computer").textContent);
 let player;
 
 document.getElementById("rock").addEventListener("click", function (event) {
@@ -68,5 +68,36 @@ function playGame() {
         document.getElementById("gameResult").textContent = "Player wins! scissors beat paper ";
         playerScore++;
         document.getElementById("player").textContent = playerScore;
+    }
+    setTimeout(gameOver, 1);
+}
+function gameOver() {
+    if (playerScore == 5) {
+        Swal.fire({
+            title: 'You win!',
+            text: 'Play again?',
+            icon: 'success',
+            confirmButtonText: 'Yes!',
+            allowOutsideClick: false
+        })
+        document.getElementById("player").textContent = 0;
+        document.getElementById("computer").textContent = 0;
+        document.getElementById("gameResult").textContent = "";
+        playerScore = 0;
+        computerScore = 0;
+    }
+    else if (computerScore == 5) {
+        Swal.fire({
+            title: 'You lose!',
+            text: 'Play again?',
+            icon: 'error',
+            confirmButtonText: 'Yes!',
+            allowOutsideClick: false
+        })
+        document.getElementById("player").textContent = 0;
+        document.getElementById("computer").textContent = 0;
+        document.getElementById("gameResult").textContent = "";
+        playerScore = 0;
+        computerScore = 0;
     }
 }
