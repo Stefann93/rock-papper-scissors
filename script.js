@@ -35,37 +35,37 @@ function playGame() {
     }
 
     else if (player == "rock" && pc == "paper") {
-        document.getElementById("gameResult").textContent = "Computer wins! paper beats rock";
+        document.getElementById("gameResult").textContent = "You chose rock and so COMPUTER wins! paper beats rock";
         computerScore++;
         document.getElementById("computer").textContent = computerScore;
     }
 
     else if (player == "rock" && pc == "scissors") {
-        document.getElementById("gameResult").textContent = "Player wins! rock beats scissors ";
+        document.getElementById("gameResult").textContent = "You chose rock and so YOU win! rock beats scissors ";
         playerScore++;
         document.getElementById("player").textContent = playerScore;
     }
 
     else if (player == "paper" && pc == "rock") {
-        document.getElementById("gameResult").textContent = "Player wins! paper beats rock ";
+        document.getElementById("gameResult").textContent = "You chose paper and so YOU win! paper beats rock ";
         playerScore++;
         document.getElementById("player").textContent = playerScore;
     }
 
     else if (player == "paper" && pc == "scissors") {
-        document.getElementById("gameResult").textContent = "Computer wins! scissors beat paper ";
+        document.getElementById("gameResult").textContent = "You chose paper and so COMPUTER wins! scissors beat paper ";
         computerScore++;
         document.getElementById("computer").textContent = computerScore;
     }
 
     else if (player == "scissors" && pc == "rock") {
-        document.getElementById("gameResult").textContent = "Computer wins! rock beats scissors ";
+        document.getElementById("gameResult").textContent = "You chose scissors and so COMPUTER wins! rock beats scissors ";
         computerScore++;
         document.getElementById("computer").textContent = computerScore;
     }
 
     else if (player == "scissors" && pc == "paper") {
-        document.getElementById("gameResult").textContent = "Player wins! scissors beat paper ";
+        document.getElementById("gameResult").textContent = "You chose scissors and so YOU win! scissors beat paper ";
         playerScore++;
         document.getElementById("player").textContent = playerScore;
     }
